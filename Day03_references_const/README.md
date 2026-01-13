@@ -1,21 +1,34 @@
-# 🚀 Modern C++ – 30 Days Learning Journey
+# 📘 Day 03 – References & Const Correctness (Modern C++)
 
-This repository documents my **30-day Modern C++ learning journey**, where I focus on
-learning **one core concept daily** and implementing it using **clean, real-world C++ code**.
-
-The goal is not just theory, but **strong fundamentals**, **best practices**, and
-**industry-relevant skills** — especially useful for **DSA, system programming, and quantitative finance**.
+This example demonstrates how **references** and **const correctness** help write
+**safe, efficient, and clean Modern C++ code**.
 
 ---
 
-## 🎯 Learning Goals
-- Build a **strong Modern C++ foundation**
-- Write **safe, efficient, and readable code**
-- Practice **daily consistency**
-- Maintain a **clean GitHub workflow**
-- Prepare for **interviews and real-world systems**
+## 🔑 Key Learnings
+
+- References act as an **alias** to an existing variable
+- Passing by reference avoids **unnecessary copies**
+- `const` prevents accidental data modification
+- `const &` is the preferred way to pass read-only parameters
+- `const` member functions guarantee **read-only behavior** of objects
 
 ---
 
-## 📂 Repository Structure
+## 🧠 Why This Matters
+
+References and const correctness are fundamental for:
+- Performance-critical code
+- Safe API design
+- STL and Modern C++ best practices
+
+---
+
+## ✅ Recommendation
+
+> **Use `const &` whenever a function does not need to modify the data.**
+
+---
+
+## 📂 Files in This Folder
 
