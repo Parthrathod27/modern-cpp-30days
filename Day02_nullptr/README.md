@@ -1,12 +1,34 @@
-## Day 2: nullptr vs NULL (Modern C++)
+# 📘 Day 03 – References & Const Correctness (Modern C++)
 
-This example demonstrates why `nullptr` is safer than `NULL` in Modern C++.
+This example demonstrates how **references** and **const correctness** help write
+**safe, efficient, and clean Modern C++ code**.
 
-### Key Learnings
-- `NULL` is typically an integer literal (0), not a real pointer
-- Using `NULL` can cause function overloading ambiguity
-- `nullptr` is a type-safe null pointer literal introduced in C++11
-- `nullptr` works correctly with raw pointers and smart pointers
+---
 
-### Recommendation
-Always prefer `nullptr` over `NULL` in Modern C++ code.
+## 🔑 Key Learnings
+
+- References act as an **alias** to an existing variable
+- Passing by reference avoids **unnecessary copies**
+- `const` prevents accidental data modification
+- `const &` is the preferred way to pass read-only parameters
+- `const` member functions guarantee **read-only behavior** of objects
+
+---
+
+## 🧠 Why This Matters
+
+References and const correctness are fundamental for:
+- Performance-critical code
+- Safe API design
+- STL and Modern C++ best practices
+
+---
+
+## ✅ Recommendation
+
+> **Use `const &` whenever a function does not need to modify the data.**
+
+---
+
+## 📂 Files in This Folder
+
